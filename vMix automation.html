@@ -19,7 +19,7 @@
 		
 			//on vMix enable your web controller and enable allow allow access to: API
 			//replace this ttp://localhost:8088 with the your web controller address
-			fetch("http://192.168.1.3:8088/API").then((response)=> {
+			fetch("http://localhost:8088/API").then((response)=> {
 				response.text().then((text)=> {
 					const parser = new DOMParser();
 					xmlDoc = parser.parseFromString(text,"text/xml");
